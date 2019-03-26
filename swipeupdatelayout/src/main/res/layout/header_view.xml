@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingTop="72dp">
 
-    <zhuofan.myaid.verticalRecyclerView.view.HeaderRefreshIcon
+    <com.droven.swipeupdatelayout.view.HeaderRefreshIcon
         android:id="@+id/header_refresh_icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
