@@ -16,7 +16,7 @@ public class SwipeUpdateLoadingView extends BaseLoadingView {
 
     @Override
     protected int layoutResId() {
-        return R.layout.vrv_load_empty_view;
+        return R.layout.loading_empty_view;
     }
 
     @Override
