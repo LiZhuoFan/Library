@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeUpdateLayout">
+        <!--必须是继承com.droven.swipeupdatelayout.base.BaseLoadingView的详细类名-->
+        <attr name="loadingView" format="string" />
+        <!--必须是继承com.droven.swipeupdatelayout.base.BaseEmptyView的详细类名-->
+        <attr name="emptyView" format="string" />
+        <!--必须是继承com.droven.swipeupdatelayout.base.BaseRefreshView的详细类名-->
+        <attr name="headerView" format="string" />
+        <!--必须是继承com.droven.swipeupdatelayout.base.BaseRefreshView的详细类名-->
+        <attr name="footerView" format="string" />
+    </declare-styleable>
+
+</resources>

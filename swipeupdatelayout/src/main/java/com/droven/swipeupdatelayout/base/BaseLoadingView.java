@@ -1,0 +1,1 @@
+package com.droven.swipeupdatelayout.base;public abstract class BaseLoadingView extends BaseComponentView {    /**     * 首次加载/重新加载中     */    public abstract void onLoading();    /**     * 首次加载/重新加载完成     */    public abstract void onLoadFinished();}
