@@ -2,6 +2,8 @@ package com.droven.swipeupdatelayout.view;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.graphics.drawable.Drawable;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
@@ -13,6 +15,8 @@ import com.droven.swipeupdatelayout.base.BaseLoadingView;
 public class SwipeUpdateLoadingView extends BaseLoadingView {
 
     private ObjectAnimator objectAnimator;
+    private ImageView emptyIv;
+    private TextView emptyTv;
 
     @Override
     protected int layoutResId() {
@@ -21,8 +25,8 @@ public class SwipeUpdateLoadingView extends BaseLoadingView {
 
     @Override
     protected void initView(View view) {
-        ImageView emptyIv = view.findViewById(R.id.empty_iv);
-        TextView emptyTv = view.findViewById(R.id.empty_tv);
+        emptyIv = view.findViewById(R.id.empty_iv);
+        emptyTv = view.findViewById(R.id.empty_tv);
         emptyTv.setText("正在加载中");
         emptyIv.setImageResource(R.mipmap.icon_loading);
         if (objectAnimator == null) {
@@ -44,5 +48,13 @@ public class SwipeUpdateLoadingView extends BaseLoadingView {
         objectAnimator.cancel();
     }
 
+    public void setValue(Drawable icon, String text) {
+        if (icon != null) {
+            emptyIv.setImageDrawable(icon);
+        }
+        if (!TextUtils.isEmpty(text)) {
+            emptyTv.setText(text);
+        }
+    }
 
 }

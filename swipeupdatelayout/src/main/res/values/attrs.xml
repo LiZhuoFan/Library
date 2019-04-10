@@ -4,12 +4,44 @@
     <declare-styleable name="SwipeUpdateLayout">
         <!--必须是继承com.droven.swipeupdatelayout.base.BaseLoadingView的详细类名-->
         <attr name="loadingView" format="string" />
+        <!--加载图标-->
+        <attr name="loadingIcon" format="reference" />
+        <!--加载文字-->
+        <attr name="loadingText" format="string" />
         <!--必须是继承com.droven.swipeupdatelayout.base.BaseEmptyView的详细类名-->
         <attr name="emptyView" format="string" />
+        <!--空数据图标-->
+        <attr name="emptyIcon" format="reference" />
+        <!--空数据文字-->
+        <attr name="emptyText" format="string" />
+        <!--错误图标-->
+        <attr name="failIcon" format="reference" />
+        <!--错误文字-->
+        <attr name="failText" format="string" />
         <!--必须是继承com.droven.swipeupdatelayout.base.BaseRefreshView的详细类名-->
         <attr name="headerView" format="string" />
+        <!--头部图标-->
+        <attr name="headerIcon" format="reference" />
+        <!--头部正常状态文字-->
+        <attr name="headerNormalText" format="string" />
+        <!--头部可刷新时文字-->
+        <attr name="headerCanRefreshText" format="string" />
+        <!--头部正在刷新时文字-->
+        <attr name="headerRefreshingText" format="string" />
+        <!--头部刷新完成时文字-->
+        <attr name="headerCompleteText" format="string" />
         <!--必须是继承com.droven.swipeupdatelayout.base.BaseRefreshView的详细类名-->
         <attr name="footerView" format="string" />
+        <!--尾部图标-->
+        <attr name="footerIcon" format="reference" />
+        <!--尾部正常状态文字-->
+        <attr name="footerNormalText" format="string" />
+        <!--尾部可加载时文字-->
+        <attr name="footerCanLoadText" format="string" />
+        <!--尾部正在加载时文字-->
+        <attr name="footerLoadingText" format="string" />
+        <!--尾部加载完成时文字-->
+        <attr name="footerCompleteText" format="string" />
     </declare-styleable>
 
 </resources>
