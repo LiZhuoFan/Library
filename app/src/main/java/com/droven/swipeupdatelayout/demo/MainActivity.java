@@ -71,16 +71,18 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case 2:
                                 adapter.setCount(0);
+                                swipeUpdateLayout.loadComplete();
                                 break;
                             case 3:
                                 adapter.loadMore();
+                                swipeUpdateLayout.loadComplete();
                                 break;
                             case 4:
                                 adapter.setCount(20);
                                 swipeUpdateLayout.setAdapter(adapter);
                                 break;
                         }
-                        swipeUpdateLayout.loadComplete();
+
                     }
 
                     @Override

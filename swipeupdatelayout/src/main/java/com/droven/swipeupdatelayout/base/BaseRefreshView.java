@@ -40,7 +40,7 @@ public abstract class BaseRefreshView extends BaseComponentView {
     public abstract void onComplete();
 
     /**
-     * 不多拖拽过程的回调，可用于边拖拽边慢慢切换图片状态（动画）
+     * 拖拽过程的回调，可用于边拖拽边慢慢切换图片状态（动画）
      *
      * @param top 拖拽高度
      */
